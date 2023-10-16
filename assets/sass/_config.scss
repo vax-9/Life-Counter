@@ -1,0 +1,55 @@
+// fonts
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400&family=UnifrakturMaguntia&display=swap');
+
+$primary-color: rgb(21, 21, 21);
+$secondary-color: #ddd;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: Roboto;
+  background-color: rgb(21, 21, 21);
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@mixin call-to-action-outline {
+  font-size: 21px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(21, 21, 21);
+  border: 3px solid rgb(21, 21, 21);
+  border-radius: 7px;
+  background-color: #ddd;
+  transition: all 0.2s;
+  &:hover {
+    background-color:#000;
+    color: #ddd;
+  }
+}
+
+@mixin card {
+  transition: transform 0.5s;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+
+  img {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+}
+
+
