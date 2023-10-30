@@ -19,7 +19,8 @@ Elevate your gaming nights, reduce errors, and keep everyone engaged in the game
 
 Giuseppe Vassallo – www.linkedin.com/in/giuseppe-vassallo-a24885291 –
 
-[https://github.com/vax-9/Life-Counter](https://life-counter-giuseppe-vassallo.netlify.app/)
+[https://github.com/vax-9/Life-Counter](https://github.com/vax-9/Life-Counter))
+[https://life-counter-giuseppe-vassallo.netlify.app/](https://life-counter-giuseppe-vassallo.netlify.app/)
 
 ## Contributing
 
