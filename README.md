@@ -1,11 +1,9 @@
 # Life Counter
 > Perfect life counter for your game nights!
 
+<img src="assets/img/screenshot.png" width="400px" >
 
-![](assets/img/screenshot.png)
-
-
-## Usage example
+## Usage
 
 Introducing our new Life Counter app, designed with a sleek and minimalistic interface for your game nights. With a user-friendly design, it simplifies scorekeeping and enhances your tabletop gaming experience.
 
@@ -19,8 +17,7 @@ Elevate your gaming nights, reduce errors, and keep everyone engaged in the game
 
 Giuseppe Vassallo – www.linkedin.com/in/giuseppe-vassallo-a24885291 –
 
-[https://github.com/vax-9/Life-Counter](https://github.com/vax-9/Life-Counter))
-[https://life-counter-giuseppe-vassallo.netlify.app/](https://life-counter-giuseppe-vassallo.netlify.app/)
+try the app! [https://life-counter-giuseppe-vassallo.netlify.app/](https://life-counter-giuseppe-vassallo.netlify.app/)
 
 ## Contributing
 

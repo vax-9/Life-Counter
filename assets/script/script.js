@@ -21,14 +21,8 @@ function Reset() {
   }
 }
 
-console.log(startingLife.value )
-
-
-function square (num) {
-  return num*num
-}
-
 myIncreaser.addEventListener('click', ()=>{
+  event.preventDefault
   myLife.innerHTML ++
 })
 
