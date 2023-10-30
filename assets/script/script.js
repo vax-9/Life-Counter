@@ -22,7 +22,6 @@ function Reset() {
 }
 
 myIncreaser.addEventListener('click', ()=>{
-  event.preventDefault
   myLife.innerHTML ++
 })
 
