@@ -1,36 +1,21 @@
 const myIncreaser = document.createElement('div')
 const myLife = document.createElement('span')
 const myDecreaser = document.createElement('div')
-const myWrapper = document.querySelector('.white')
-
-myIncreaser.classList = 'life-increaser'
-myIncreaser.innerHTML = '+'
-myLife.classList = 'actual-life'
-myLife.innerHTML = '0'
-myDecreaser.classList = 'life-decreaser'
-myDecreaser.innerHTML = '-'
-
-myWrapper.appendChild(myIncreaser)
-myWrapper.appendChild(myLife)
-myWrapper.appendChild(myDecreaser)
+const player1 = document.querySelector('.white')
 
 const opponentLife = document.createElement('span')
 const opponentIncreaser = document.createElement('div')
 const opponentDecreaser = document.createElement('div')
-const opponentWrapper = document.querySelector('.black')
+const player2 = document.querySelector('.black')
 
-opponentIncreaser.classList = 'life-increaser'
-opponentIncreaser.innerHTML = '+'
-opponentLife.classList = 'actual-life'
-opponentLife.innerHTML = '0'
-opponentDecreaser.classList = 'life-decreaser'
-opponentDecreaser.innerHTML = '-'
+Generate(myIncreaser,'life-increaser', '+', player1)
+Generate(myLife, 'actual-life', '0', player1)
+Generate(myDecreaser, 'life-decreaser', '-', player1)
 
-opponentWrapper.appendChild(opponentIncreaser)
-opponentWrapper.appendChild(opponentLife)
-opponentWrapper.appendChild(opponentDecreaser)
+Generate(opponentIncreaser, 'life-increaser', '+', player2)
+Generate(opponentLife, 'actual-life', '0', player2)
+Generate(opponentDecreaser, 'life-decreaser', '-', player2)
 
-const players = document.querySelectorAll('.player-counter')
 const startingLife = document.querySelector ('#set-starting-life')
 const resetButton = document.querySelector ('button')
 
@@ -46,22 +31,22 @@ function Reset() {
   }
 }
 
-myWrapper.addEventListener('click', (e)=>{
+function Generate(elem, style, text, player) {
+  elem.classList = style
+  elem.innerHTML = text
+  player.appendChild(elem)
+  return
+}
+
+document.addEventListener('click', (e)=>{
   if (e.target.matches('.life-increaser')) {
-      myLife.innerHTML++
-  } else if (e.target.matches('.life-decreaser'))
-    myLife.innerHTML--
+      e.target.nextElementSibling.innerHTML++
+  } else if (e.target.matches('.life-decreaser')) {
+    e.target.previousElementSibling.innerHTML--
+  } else if (e.target === resetButton) {
+    Reset()
+  }
 })
 
-opponentWrapper.addEventListener('click', (e)=>{
-  if (e.target.matches('.life-increaser')) {
-    opponentLife.innerHTML++
-  } else if (e.target.matches('.life-decreaser'))
-    opponentLife.innerHTML--
-})
-
-resetButton.addEventListener('click', ()=> {
-  Reset();
-})
 
 
