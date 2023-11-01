@@ -1,9 +1,9 @@
 const myIncreaser = document.createElement('div')
-const myLife = document.createElement('span')
+const myLife = document.createElement('div')
 const myDecreaser = document.createElement('div')
 const player1 = document.querySelector('.white')
 
-const opponentLife = document.createElement('span')
+const opponentLife = document.createElement('div')
 const opponentIncreaser = document.createElement('div')
 const opponentDecreaser = document.createElement('div')
 const player2 = document.querySelector('.black')
