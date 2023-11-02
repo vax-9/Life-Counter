@@ -8,13 +8,13 @@ const opponentIncreaser = document.createElement('div')
 const opponentDecreaser = document.createElement('div')
 const player2 = document.querySelector('.black')
 
-Generate(myIncreaser,'life-increaser', '+', player1)
-Generate(myLife, 'actual-life', '0', player1)
-Generate(myDecreaser, 'life-decreaser', '-', player1)
+GenerateElement(myIncreaser,'life-increaser', '+', player1)
+GenerateElement(myLife, 'actual-life', '0', player1)
+GenerateElement(myDecreaser, 'life-decreaser', '-', player1)
 
-Generate(opponentIncreaser, 'life-increaser', '+', player2)
-Generate(opponentLife, 'actual-life', '0', player2)
-Generate(opponentDecreaser, 'life-decreaser', '-', player2)
+GenerateElement(opponentIncreaser, 'life-increaser', '+', player2)
+GenerateElement(opponentLife, 'actual-life', '0', player2)
+GenerateElement(opponentDecreaser, 'life-decreaser', '-', player2)
 
 const startingLife = document.querySelector ('#set-starting-life')
 const resetButton = document.querySelector ('button')
@@ -31,16 +31,17 @@ function Reset() {
   }
 }
 
-function Generate(elem, style, text, player) {
+function GenerateElement(elem, style, text, player) {
   elem.classList = style
   elem.innerHTML = text
   player.appendChild(elem)
   return
 }
 
+
 document.addEventListener('click', (e)=>{
   if (e.target.matches('.life-increaser')) {
-      e.target.nextElementSibling.innerHTML++
+    e.target.nextElementSibling.innerHTML++
   } else if (e.target.matches('.life-decreaser')) {
     e.target.previousElementSibling.innerHTML--
   } else if (e.target === resetButton) {
