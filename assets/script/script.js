@@ -23,11 +23,9 @@ function Reset() {
   if (startingLife.value ==='' ){
     myLife.innerHTML = 0
     opponentLife.innerHTML = 0 
-    return
   } else {
     myLife.innerHTML = startingLife.value
     opponentLife.innerHTML = startingLife.value
-    return
   }
 }
 
@@ -35,11 +33,10 @@ function GenerateElement(elem, style, text, player) {
   elem.classList = style
   elem.innerHTML = text
   player.appendChild(elem)
-  return
 }
 
 
-document.addEventListener('click', (e)=>{
+document.body.addEventListener('click', (e)=>{
   if (e.target.matches('.life-increaser')) {
     e.target.nextElementSibling.innerHTML++
   } else if (e.target.matches('.life-decreaser')) {
@@ -48,6 +45,3 @@ document.addEventListener('click', (e)=>{
     Reset()
   }
 })
-
-
-
