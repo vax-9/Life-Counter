@@ -17,7 +17,7 @@ Elevate your gaming nights, reduce errors, and keep everyone engaged in the game
 
 Giuseppe Vassallo – www.linkedin.com/in/giuseppe-vassallo-a24885291 –
 
-try the app! [https://life-counter-giuseppe-vassallo.netlify.app/](https://life-counter-giuseppe-vassallo.netlify.app/)
+try the app! [https://score-life-counter.netlify.app/](https://score-life-counter.netlify.app/)
 
 ## Contributing
 
