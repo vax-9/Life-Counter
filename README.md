@@ -21,8 +21,4 @@ try the app! [https://life-counter-giuseppe-vassallo.netlify.app/](https://life-
 
 ## Contributing
 
-1. Fork it (<https://github.com/vax-9/Life-Counter/fork>)
-2. Create your feature branch (`git checkout -b feature/newFeature`)
-3. Commit your changes (`git commit -am 'Add some newFeature'`)
-4. Push to the branch (`git push origin feature/newFeature`)
-5. Create a new Pull Request
+If you want to help me upgrading this app you can just fork it! Write me a message on linkedin so I can improve too!
